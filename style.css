@@ -64,6 +64,7 @@ nav ul li:nth-of-type(4){
   margin-left: 14.75em;
 }
 
+
 #logo{
   margin-top: -5.625em;
   margin-left: 21.875em;
@@ -72,6 +73,14 @@ nav ul li:nth-of-type(4){
   position: relative;
   margin-bottom: 10em;
 }
+
+.sub-menu{
+  width: 150px;
+}
+
+
+
+
 
 
 /*content*/

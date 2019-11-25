@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $('.sub-menu').hide();
+  $('.sub-menu').hide(); //Hide children by default
 
-  $('.main-menu').click(
-  function(){$(this).next('ul').slideToggle(1000);}
-);
+$('.main-menu').children().hover(function(){
+    event.preventDefault();
+    $(this).children('.sub-menu').slideToggle('slow');
+});
 
-
-  });
+});
