@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tropixel</title>
+  <meta name="description" content="Restaurant Tropixel">
+  <link rel="stylesheet" href="css/styleIndex.css">
+  <link rel="stylesheet" href="css/styleEvents.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/scriptEvents.js"></script>
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <div id="events">
+
+      <!-- Booking Section -->
+      <h3 id="bookingtitle" class="eventtitle">Make a Reservation</h3>
+      <div id="bookingdetails" class="eventdetails">
+        <form id="bookingform">
+          <div id="form-left" class="form-part">
+            <label for="eventname">Event Name</label> <br/>
+            <input type="text" name="eventname" id="eventname" required> <br/>
+            <label for="eventpeople">Number of People</label> <br />
+            <input type="number" name="eventpeople" id="eventpeople" required> <br />
+            <label for="eventdate">Date</label> <br/>
+            <input type="date" name="eventdate" id="eventdate" required> <br/>
+            <label for="eventtime">Time</label> <br />
+            <input type="time" name="eventtime" id="eventtime" required> <br />
+            <label for="eventemail">Email</label> <br />
+            <input type="email" name="eventemail" id="eventemail" required>
+          </div>
+          <div id="form-right" class="form-part">
+            <label for="eventdesc">Description</label> <br />
+            <textarea name="eventdesc" id="eventdesc" cols="70" rows="10" required></textarea>
+            <input type="submit" value="Book">
+          </div>
+        </form>
+      </div>
+
+      <!-- Public Events Section -->
+      <h2 id="public">Public Events</h2>
+      <div id="eventlist"></div>
+
+    </div>
+  </main>
+
+</body>
+</html>

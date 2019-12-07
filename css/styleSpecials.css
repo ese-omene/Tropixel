@@ -1,0 +1,69 @@
+main{
+    text-align: center;
+}
+
+#specials{
+    margin-top: 250px;
+}
+
+#specials-left{
+    width: 20%;
+    display: inline-block;
+    background-color: aqua;
+}
+
+#days{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#days li{
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+#days li:last-child{
+    border-bottom: none;
+}
+
+.selectedDay{
+    background-color: #F39C12;
+}
+
+#specials-right{
+    width: 75%;
+    display: inline-block;
+    height: 350px;
+    vertical-align: top;
+    background-color: #F39C12;
+}
+
+#special-imagecontainer{
+    width: 40%;
+    display: inline-block;
+    height: 350px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#special-imagecontainer img{
+    width: 90%;
+    vertical-align: middle;
+    background-color: white;
+}
+
+#special-text{
+    width: 60%;
+    display: inline-block;
+    height: 350px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#special-text p{
+    width: 90%;
+    margin: 0 auto;
+}
