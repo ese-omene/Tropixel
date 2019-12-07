@@ -1,0 +1,62 @@
+main{
+    background-color: brown;
+    padding: 20px 0;
+    margin-top: 250px;
+}
+
+#events{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#bookingtitle{
+    background-color: greenyellow;
+}
+
+#bookingdetails{
+    background-color: PALEGREEN;
+    padding: 5px;
+}
+
+.form-part{
+    display: inline-block;
+    
+}
+
+#form-right{
+    vertical-align: top;
+}
+
+#eventdesc{
+    resize: none;
+}
+
+#public{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.eventtitle{
+    background-color: lightskyblue;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.eventdetails{
+    display: none;
+}
+
+.eventdesc{
+    background-color: AQUAMARINE;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.eventdate{
+    background-color: TURQUOISE;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+}
