@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
         }
 
         else if (userInput === null || userInput === "") {
-            window.alert("That's not a team number. Enter a number.");
+            window.alert("That's not a number. Enter a number.");
             document.getElementById("closestLoc").innerHTML = "Ask me your closest location again." ;
         }
 
