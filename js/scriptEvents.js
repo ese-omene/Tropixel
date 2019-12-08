@@ -5,19 +5,19 @@ $(document).ready(function () {
         {
             "Name": "Christmas Dinner",
             "Desc": "We all gather to have dinner.",
-            "Date": new Date(2019, 12, 25, 19, 30),
+            "Date": new Date(2019, 11, 25, 19, 30),
             "Confirmed": 1
         },
         {
             "Name": "New Year Party",
             "Desc": "Let's welcome 2020 all together!",
-            "Date": new Date(2019, 12, 31, 22, 00),
+            "Date": new Date(2019, 11, 31, 22, 00),
             "Confirmed": 1
         },
         {
             "Name": "JS Networking",
             "Desc": "JS developers meet and discuss JS updates.",
-            "Date": new Date(2020, 1, 10, 16, 30),
+            "Date": new Date(2020, 0, 10, 16, 30),
             "Confirmed": 1
         }
     ];
@@ -50,7 +50,7 @@ $(document).ready(function () {
     // Click events
     $(".eventtitle").click(toggleEvent);
 
-    function toggleEvent(){
+    function toggleEvent() {
         $(".eventdetails").not($(this).next('.eventdetails')).hide();
         $(this).next(".eventdetails").fadeToggle(1000);
     }
@@ -60,7 +60,7 @@ $(document).ready(function () {
         e.preventDefault();
         var inputs = "Your reservation is received. We will contact you soon. <br/>"
             + "Reservation Details as follows...<br/>"
-            + "Name: " +  $("#eventname").val() + "<br/>"
+            + "Name: " + $("#eventname").val() + "<br/>"
             + "Participants: " + $("#eventpeople").val() + " person(s)<br/>"
             + "Date: " + $("#eventdate").val() + "<br/>"
             + "Time: " + $("#eventtime").val() + "<br/>"
@@ -68,5 +68,10 @@ $(document).ready(function () {
             + "Description: " + $("#eventdesc").val() + "<br/>";
         $("#bookingdetails").html(inputs);
     });
+
+    // Event Counter
+    var today = new Date();
+    var dayDifference = (events[0]["Date"] - today) / (1000 * 3600 * 24);
+    $("#timerCounter").text(dayDifference.toFixed());
 
 });

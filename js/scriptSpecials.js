@@ -1,10 +1,15 @@
 $(document).ready(function () {
-    
+
+    var monthNames = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+    ];
+
     // Data of Specials
     var specials = [
         {
-            "Day": "Monday", 
-            "Meal": "Caribbean Fish Stew", 
+            "Day": "Monday",
+            "Meal": "Caribbean Fish Stew",
             "Details": "With two types of fish and a combination of delicious spices, this dish is a seafood lover's dream and total crowd-pleaser.",
             "img": "CaribbeanFishStew.jpg"
         },
@@ -45,15 +50,21 @@ $(document).ready(function () {
             "img": "TropicalFruit.jpg"
         }
     ];
-    
+
+    var monthlySpecial = {
+        "Meal": "Sea Scallop Risotto",
+        "Details": "Whether serving on pasta, dressed greens, or creamy risotto the key to sea scallops is a good hard sear. Simply pat them dry beforehand, add to a smoking hot cast-iron pan, and avoid flipping until the flesh is opaque and the edges are caramelized.",
+        "img": ["SeaScallopRisotto1.jpg", "SeaScallopRisotto2.jpeg"]
+    }
+
     // List the days
-    specials.forEach(function(item){
+    specials.forEach(function (item) {
         $("#days").append('<li>' + item["Day"] + '</li>');
     });
 
     // Hover events
     $("#days li").hover(
-        function(){
+        function () {
             var index = $(this).index();
             selectDay(index);
         }
@@ -62,15 +73,33 @@ $(document).ready(function () {
     // Select today's special
     var date = new Date();
     var day = date.getDay();
-    selectDay(day-1);
-    
+    if(day == 0)
+        day = 7;
+    selectDay(day - 1);
+
 
     // Select Day
-    function selectDay(index){
+    function selectDay(index) {
         $("#days li").removeClass("selectedDay");
         $("#special-image").attr("src", "images/specials/" + specials[index]["img"]);
         $("#special-text h1").text(specials[index]["Meal"]);
         $("#special-text p").text(specials[index]["Details"]);
-        $("#days li:nth-child(" + (index+1) + ")").addClass("selectedDay");
+        $("#days li:nth-child(" + (index + 1) + ")").addClass("selectedDay");
     }
+
+    // Monthly Special part
+    $("#monthlyTitle").text(monthlySpecial.Meal);
+    var monthIndex = date.getMonth();
+    $("#month").text(monthNames[monthIndex]);
+    $("#monthlyDesc").text(monthlySpecial.Details);
+
+    var flag = 0;
+    $("#monthlyImg").attr("src", "images/specials/" + monthlySpecial.img[1]);
+    setInterval(function () {
+        flag = 1 - flag;
+        if (flag == 1)
+            $("#monthlyImg").attr("src", "images/specials/" + monthlySpecial.img[0]);
+        else
+            $("#monthlyImg").attr("src", "images/specials/" + monthlySpecial.img[1]);
+    }, 3000);
 });
