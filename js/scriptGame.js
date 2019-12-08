@@ -9,7 +9,8 @@ $(document).ready(function(){
 count = 4;
 $('#replay').hide();
 $('#coconut').hide();
-play.innerHTML = "Click to Play"
+play.innerHTML = "Click to Play";
+msg.innerHTML = "You gotta be quick! you have " + count + " chances"
 replay.innerHTML = "Replay";
 play.onclick = letsPlay;
 //click button to start the game
@@ -19,13 +20,25 @@ $('#play').hide();
   document.getElementById("stage").style.cursor = "pointer";
 }
 
-coconut.onclick = moveCoconut;
+coconut.onmouseover = moveCoconut;
 
  function moveCoconut(){
+
+
 //keep track of how many tries are left//
    count -= 1;
-   console.log(count)
-   msg.innerHTML = "you have  " + count +" tries left";
+  // console.log(count)
+
+  if (count === 3){
+   msg.innerHTML = "that was close! you have  " + count +" tries left";
+  }
+  if (count === 2){
+   msg.innerHTML = " you almost had him!! you have  " + count +" tries left";
+}
+  if (count === 1){
+   msg.innerHTML = "last try buddy! you have  " + count +" try left";
+}
+
 if (count === 0){
   $('#coconut').hide();
   niceTry.innerHTML = "better luck next time!";
