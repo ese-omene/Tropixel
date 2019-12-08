@@ -1,10 +1,38 @@
 $(document).ready(function(){
 
-var coconut = document.getElementById('coconut');
+
+//var btn = document.getElementById('btn')
+//var stage = document.getElementById('stage');
+//var coconut = document.getElementById('coconut'),
+
+//player starts with 4 tries
+count = 4;
+$('#replay').hide();
+$('#coconut').hide();
+play.innerHTML = "Click to Play"
+replay.innerHTML = "Replay";
+play.onclick = letsPlay;
+//click button to start the game
+function letsPlay(){
+$('#play').hide();
+  $('#coconut').show();
+  document.getElementById("stage").style.cursor = "pointer";
+}
 
 coconut.onclick = moveCoconut;
 
  function moveCoconut(){
+//keep track of how many tries are left//
+   count -= 1;
+   console.log(count)
+   msg.innerHTML = "you have  " + count +" tries left";
+if (count === 0){
+  $('#coconut').hide();
+  niceTry.innerHTML = "better luck next time!";
+  $('#replay').show();
+
+}
+
   // alert("you clicked the coconut");
 var x = event.pageX;
 
@@ -27,7 +55,7 @@ coconut.style.top = yMove + 'px';
 //  400
 coconut.style.top = (yMove - stageHeight) + 'px';
 } else {
-coconut.style.top =  ( Math.floor(yMove)/2.5) - stageHeight + 'px';
+coconut.style.top =  ( (Math.floor(yMove))/2.5) - stageHeight + 'px';
 }
 
 if (stageWidth>xMove){
@@ -37,6 +65,14 @@ if (stageWidth>xMove){
 // 1360 -340 no no take cant stage away from move since bigger
 coconut.style.left = (xMove - stageWidth) + 'px';
 }
+}
+
+ replay.onclick = letsReplay;
+function letsReplay(){
+
+  window.location.reload();
+
+
 }
 
 });
