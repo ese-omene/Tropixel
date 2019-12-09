@@ -5,56 +5,56 @@ $(document).ready(function () {
         "August", "September", "October", "November", "December"
     ];
 
-    // Data of Specials
+    // Fake Data of Specials
     var specials = [
         {
             "Day": "Monday",
-            "Meal": "Caribbean Fish Stew",
-            "Details": "With two types of fish and a combination of delicious spices, this dish is a seafood lover's dream and total crowd-pleaser.",
-            "img": "CaribbeanFishStew.jpg"
+            "Meal": "Cucumber and water chestnut salad",
+            "Details": "Fresh cucumber and water chestnut served on a bed of lettuce.",
+            "img": "CucumberSalad.jpg"
         },
         {
             "Day": "Tuesday",
-            "Meal": "Caribbean Chicken Kebab",
-            "Details": "Cook up the flavor of the islands by grilling chicken on skewers with pineapple, onion and bell pepper pieces, and topping with spicy lime butter.",
-            "img": "CaribbeanChickenKebab.jpg"
+            "Meal": "Chickpea and spinach parcels",
+            "Details": "Thin filo pastry cases stuffed with fresh chickpea and spinach.",
+            "img": "Chickpeaparcels.jpg"
         },
         {
             "Day": "Wednesday",
-            "Meal": "Coconut French Toast",
-            "Details": "Replacing some of the milk with canned coconut milk is the secret ingredient to making this island-style French toast.",
-            "img": "CoconutFrenchToast.jpg"
+            "Meal": "Tomato and gorgonzola risotto",
+            "Details": "Creamy risotto rice with cherry tomatoes and gorgonzola.",
+            "img": "Tomatorisotto.jpg"
         },
         {
             "Day": "Thursday",
-            "Meal": "Cuban Sandwich",
-            "Details": "A flavorful marinade makes this pork sandwich a winner.",
-            "img": "CubanSandwich.jpg"
+            "Meal": "Strawberry and orange buns",
+            "Details": "Crumbly buns made with fresh strawberries and blood orange.",
+            "img": "Strawberrybuns.jpg"
         },
         {
             "Day": "Friday",
-            "Meal": "Mango-Pineapple Crab Salad",
-            "Details": "This simple and beautiful salad also features creamy avocado.",
-            "img": "MangoPineapple.jpg"
+            "Meal": "Squash and peppercorn spaghetti",
+            "Details": "Spagetti topped with a blend of fresh squash and szechuan peppercorn.",
+            "img": "Squashspaghetti.jpg"
         },
         {
             "Day": "Saturday",
-            "Meal": "Scallops with Mango Vinaigrette",
-            "Details": "The key to great grilled scallops is a preheated grill. The grates must be hot when the scallops are placed on them, otherwise the scallops with stick and tear. If you are not a grill pro, you can broil in the oven for similar results.",
-            "img": "Scallops.jpg"
+            "Meal": "Polenta and treacle muffins",
+            "Details": "Fluffy muffins made with polenta and dark treacle.",
+            "img": "Polentamuffins.jpg"
         },
         {
             "Day": "Sunday",
-            "Meal": "Tropical Fruit, Avocado, and Grilled Shrimp Salad",
-            "Details": "We couldn’t stop eating this delicious blend of seafood and fruit. The interesting technique of salting the onions really does make a difference―they become mild enough to not overpower the fruit, but you can still taste their flavor.",
-            "img": "TropicalFruit.jpg"
+            "Meal": "Spinach and mustard crepes",
+            "Details": "Fluffy crepes filled with baby spinach and dried mustard.",
+            "img": "Spinachcrepes.jpg"
         }
     ];
 
     var monthlySpecial = {
-        "Meal": "Sea Scallop Risotto",
-        "Details": "Whether serving on pasta, dressed greens, or creamy risotto the key to sea scallops is a good hard sear. Simply pat them dry beforehand, add to a smoking hot cast-iron pan, and avoid flipping until the flesh is opaque and the edges are caramelized.",
-        "img": ["SeaScallopRisotto1.jpg", "SeaScallopRisotto2.jpeg"]
+        "Meal": "Squash and pumpkin seed lasagne",
+        "Details": "Layers of egg-free pasta interspersed with pattypan squash and pumpkin seeds.",
+        "img": ["lasagne1.jpg", "lasagne2.jpg"]
     }
 
     // List the days
