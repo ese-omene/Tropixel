@@ -3,7 +3,7 @@ main{
 }
 
 #specials{
-    margin-top: 250px;
+    margin-top: 20px;
 }
 
 #specials-left{
@@ -66,4 +66,8 @@ main{
 #special-text p{
     width: 90%;
     margin: 0 auto;
+}
+
+#monthlySpecial{
+    background-color: fuchsia;
 }

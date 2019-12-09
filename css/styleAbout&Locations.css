@@ -80,6 +80,16 @@ nav ul ul li {
   min-height: 500px;
 }
 
+#aboutandlocationscontent {
+    width:1000px;
+    margin: 0 auto;
+}
+
+.aboutpic {
+    height:300px;
+    width:500px;
+}
+
 /*footer*/
 
 footer {
