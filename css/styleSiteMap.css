@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+*,*::after, *::before{
+  box-sizing: border-box;
+}
+
+main a{
+  text-decoration: none;
+color: limegreen;
+text-transform: uppercase;
+}
+
+#home{
+  height: 75px;
+  background-color: #ffe200;
+text-align: center;
+line-height: 25px;
+  width:100%;
+  border: 5px black solid;
+  margin: 2px;
+  border-radius: 10px;
+}
+main h2 {
+  height: 100px;
+  background-color: #f5ea74;
+text-align: center;
+line-height: 75px;
+  width:auto;
+  border: 5px black solid;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+
+main h3 {
+  height: 50px;
+  background-color: #ffffcc;
+text-align: center;
+line-height: 50px;
+  width:auto;
+  border: 5px black solid;
+  margin: 2px;
+  margin-top: 4px;
+  border-radius: 10px;
+
+}
