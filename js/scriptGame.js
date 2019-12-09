@@ -41,6 +41,7 @@ coconut.onmouseover = moveCoconut;
 
 if (count === 0){
   $('#coconut').hide();
+  msg.innerHTML = "";
   niceTry.innerHTML = "better luck next time!";
   $('#replay').show();
 
