@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <title>Tropixel</title>
   <meta name="description" content="Restaurant Tropixel">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/styleIndex.css">
-  <link rel="stylesheet" href="css/styleGame.css">
+  <link rel="stylesheet" href="css/styleSiteMap.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/scriptGame.js"></script>
+  <script type="text/javascript" src="js/scriptSiteMap.js"></script>
 </head>
 
 
@@ -40,13 +42,13 @@
                   <li><a href="events.html">bookings</a></li>
               </ul>
             </li>
-            <li><a href="aboutus.html">about us</a></li>
+            <li><a href="/">about us</a></li>
             <li>
               <a class="expandable">contact us</a>
               <ul class="sub-menu">
                 <li><a href="careers.html">careers</a></li>
-                <li><a href="locations.html">locations</a></li>
-                <li><a href="sitemap.html">site map</a></li>
+                <li><a href="/">locations</a></li>
+                <li><a href="/">site map</a></li>
               </ul>
             </li>
           </ul>
@@ -54,21 +56,48 @@
       </div>
     </header>
 
-
     <main>
       <div class="wrapper content">
-<h2>Catch Mr. Coconut to win a prize!</h2>
+        <h1> Site Map</h1>
 
+<div class="pure-g">
+<div class="pure-u-1" id="home"><a href="index.html"><h1>Home</h1></a></div>
+</div>
+<div class="pure-g">
 
-<div id="stage">
-<div id="coconut"><img id="mrCoconut"src="images/coconut.png"></div>
+<div class= "pure-u-1-4"><div id="sm-menu"><a href="/"><h2>Menu</h2></a></div>
 
-<button id="play"></button>
-<button id="replay"></button>
+  <div id="sm-specials"><a href="specials.html"><h3>Specials</h3></a></div>
+</div>
+<div class= "pure-u-1-4">
+  <div id="sm-events"> <a href="events"><h2>Events</h2></a></div>
+  <div id="sm-contest"><a href="game.html"><h3>Contest</h3></a></div>
+  <div id="sm-giftcards"><a href="/"><h3>Gift Cards</h3></a></div>
+  <div id="sm-bookings"><a href="/"><h3>Bookings</h3></a></div>
+  </div>
+<div class= "pure-u-1-4" id="sm-aboutus"><a href="aboutus.html"><h2>About Us</h2></a></div>
+<div class= "pure-u-1-4">
+  <div id="sm-contactus"><a href="/"><h2>Contact Us</h2></a></div>
+  <div  id="sm-careers"><a href="careers.html"><h3>Careers</h3></a></div>
+  <div id="sm-locations"><a href="locations.html"><h3>Locations</h3></a></div>
+  <div id="sm-sitemap"><a href="sitemap.html"><h3>Site Map</h3></a></div>
+
+</div>
 </div>
 
-<div id="msg"></div>
-      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
     </main>
 
     <footer>

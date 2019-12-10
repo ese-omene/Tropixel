@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tropixel</title>
+  <meta name="description" content="Restaurant Tropixel">
+  <link rel="stylesheet" href="css/styleIndex.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/styleContact.css">
+	<script type="text/javascript" src="jquery.3.4.1.js" ></script>
+	<script type="text/javascript" src="js/scriptContact.js"></script>	
+</head>
+
+
+
+<body>
+  <div id="page-container">
+
+    <header>
+      <div class="wrapper">
+        <!-- navigation and logo-->
+        <nav>
+          <ul class="main-menu">
+            <li>
+              <a href="index.html"><img id="logo" src="images/logo.png" alt="Welcome to Tropixel"></a>
+            </li>
+            <li><a href="index.html">home</a></li>
+            <li>
+              <a class="expandable">menu</a>
+              <ul class="sub-menu">
+                <li><a href="specials.html">specials</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="expandable">events</a>
+              <ul class="sub-menu">
+                  <li ><a href="game.html">contest</a></li>
+                  <li ><a href="/">gift cards</a></li>
+                  <li><a href="events.html">bookings</a></li>
+              </ul>
+            </li>
+            <li><a href="/">about us</a></li>
+            <li>
+              <a class="expandable" href="contact.html">contact us</a>
+              <ul class="sub-menu">
+                <li><a href="careers.html">careers</a></li>
+                <li><a href="/">locations</a></li>
+                <li><a href="/">site map</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+		<div class="wrapper content">
+			<form method="post" action="" name="form_contact">
+				<fieldset>
+					<legend>Please complete the form by filling your information</legend>
+							
+					<div class="form_div"><label for="c_name">Name:</label>
+						<input type="text" id="c_name" name="f_name" /><span id="s_name">* Please enter the valid name..</span>
+					</div>
+								
+					<div class="form_div"><label for="c_phone">Phone:</label>
+						<input type="text" id="c_phone" name="f_phone" /><span id="s_phone">* Please enter the valid phone..</span>
+					</div>
+								
+					<div class="form_div"><label for="c_email">Email:</label>
+						<input type="text" id="c_email" name="f_email" /><span id="s_email">* Please enter the valid email..</span>
+					</div>
+								
+					<div class="form_div"><label for="c_address">Address:</label>
+						<input type="text" id="c_address" name="f_address" /><span id="s_address">* Please enter your address..</span>
+					</div>
+					
+					<div class="form_div"><label for="c_province">Province:</label>
+						<select id="c_province" name="f_province">
+							<option value=""></option>
+							<option value="ON">Ontario</option>
+							<option value="NL">Newfoundland & Labrador</option>							
+							<option value="BC">NBritish Columbia</option>
+							<option value="MB">Manitoba</option>
+							<option value="AB">Alberta</option>
+							<option value="QU">Quebec</option>
+						</select>
+						<span id="s_province">* Please enter your province..</span>
+					</div>
+								
+					<div id="msg_box" class="form_div">Your form is submitted successfully ...</div>
+					
+					<div class="form_div" id="c_submit">
+						<input type="submit" value="SUBMIT"  id="submit" name="f_submit" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li> <a href="/">home</a></li>
+            <li><a href="/">menu</a></li>
+            <li><a href="/">events</a></li>
+            <li><a href="/">about us</a></li>
+            <li><a href="contact.html">contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

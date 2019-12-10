@@ -5,8 +5,15 @@
 
 }
 
+button{
+height: 50px;
+width: 100px;
+position: absolute;
+top: 50%;
 
-img {
+}
+
+#mrCoconut {
   height: 100px;
   width: auto;
 /*  position: absolute;
