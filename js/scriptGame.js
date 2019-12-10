@@ -30,19 +30,19 @@ coconut.onmouseover = moveCoconut;
   // console.log(count)
 
   if (count === 3){
-   msg.innerHTML = "that was close! you have  " + count +" tries left";
+   msg.innerHTML = "That was close! you have  " + count +" tries left";
   }
   if (count === 2){
-   msg.innerHTML = " you almost had him!! you have  " + count +" tries left";
+   msg.innerHTML = " You almost had him!! you have  " + count +" tries left";
 }
   if (count === 1){
-   msg.innerHTML = "last try buddy! you have  " + count +" try left";
+   msg.innerHTML = "Last try buddy! you have  " + count +" try left";
 }
 
 if (count === 0){
   $('#coconut').hide();
   //msg.innerHTML = "";
-  msg.innerHTML = "better luck next time!";
+  msg.innerHTML = "Better luck next time!";
   $('#replay').show();
 
 }
