@@ -1,0 +1,30 @@
+#s_name,#s_phone,#s_email,#s_address,#s_province{
+	display:none;
+}
+#msg_box{
+	display:none;
+}
+form{
+	margin-top:2%;
+	margin-left:25%;
+	width:50%;
+	text-align:center;
+}
+legend{
+	font-size:25px;
+	font-weight:bold;
+}
+.form_div{
+	margin:2%;
+	font-size:20px;	
+}
+input{
+	border-radius:5px;
+	background-color:white;
+	width:30%;
+}
+#submit{
+	background-color:rgba(80, 208, 255, .71);
+	font-weight:bold;
+	font-size:22px;
+}
