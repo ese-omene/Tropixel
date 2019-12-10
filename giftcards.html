@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="css/styleIndex.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/scriptgifts.js"></script>
 </head>
-
-
-
 <body>
   <div id="page-container">
 
@@ -34,7 +32,7 @@
               <a class="expandable">events</a>
               <ul class="sub-menu">
                   <li ><a href="game.html">contest</a></li>
-                  <li ><a href="giftcards.html">gift cards</a></li>
+                  <li ><a href="/">gift cards</a></li>
                   <li><a href="events.html">bookings</a></li>
               </ul>
             </li>
@@ -51,15 +49,33 @@
         </nav>
       </div>
     </header>
-
-    <main>
-      <div class="wrapper content">
-        <h1> Welcome To Tropixel </h1>
-        <p>  Home of the 8-bit curry chicken </p>
-      </div>
-    </main>
-
-    <footer>
+	<main id="gift_cards" class="wrapper content">
+		<form action="#" method="post" name="gift_form">
+			<fieldset>
+				<legend><h2>Please complete your information</h2></legend>
+			<div>
+				<p><label for="user_name">Enter Name:</label>
+				<input type="text" id="user_name" name="user_name" placeholder="Enter Your name"></p>
+			</div>
+			<div>
+				<p><label for="user_email">Enter Email:</label>
+				<input type="email" id="user_email" name="user_email" placeholder="eg:john@gmail.com"></p>
+			</div>
+			<div>
+				<p><label for="user_contact">Contact Number:</label>
+				<input type="text" id="user_contact" name="user_contact" placeholder="eg:89873762272"></p>
+			</div>
+			<div>
+				<p><label for="user_cost">Total Cost Of Items Purchased:</label>
+				<input type="text" id="user_cost"  name="user_cost" placeholder="eg:$50"></p>
+			</div>
+			<div>
+			<input type="submit" value="Submit" name="f_submit">
+			</div>
+			</fieldset>
+		</form>
+	</main>
+	<footer>
       <div class="wrapper">
         <nav>
           <ul>
