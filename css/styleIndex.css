@@ -9,7 +9,7 @@
 }
 
 body{
-  background-image: url("../images/beach.jpg");
+  background-image: url("../images/beach.jpg"); /*source for background https://wallpapersafari.com/w/ZCa7GT*/
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -104,9 +104,9 @@ footer nav ul li {
 #buttonBox{
 	margin-top:50px;
 	display: none;
-	text-align: center;	
+	text-align: center;
 	padding: 10px;
-	
+
 }
 
 h2{
