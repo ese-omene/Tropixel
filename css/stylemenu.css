@@ -1,0 +1,102 @@
+body{
+
+}
+* {
+	font-family: 'Paprika', cursive;
+}
+#breakfast {
+	background: rgba(255,255,255, 0.78);
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.foodContainer{
+	background: #58D68D;
+	width: 80%;
+	margin: 0 auto;
+}
+.foodContainer p{
+	background: #58D68D;
+	padding: 15px;
+	color: #FFE5C3;
+	font-size:20px;
+	text-align:center;
+}
+.price1 {
+	margin-left:550px;
+}
+.price2 {
+	margin-left:505px;
+}
+.price3 {
+	margin-left:660px;
+}
+.price4 {
+	margin-left:490px;
+}
+
+.l_price1 {
+	margin-left:670px;
+}
+.l_price2 {
+	margin-left:590px;
+}
+.l_price3 {
+	margin-left:400px;
+}
+.l_price4 {
+	margin-left:600px;
+}
+.d_price1 {
+	margin-left:620px;
+}
+.d_price2 {
+	margin-left:610px;
+}
+.d_price3 {
+	margin-left:590px;
+}
+.d_price4 {
+	margin-left:620px;
+}
+
+.dr_price1 {
+	margin-left:580px;
+}
+.dr_price2 {
+	margin-left:600px;
+}
+.dr_price3 {
+	margin-left:550px;
+}
+.dr_price4 {
+	margin-left:550px;
+}
+
+.de_price1 {
+	margin-left:510px;
+}
+.de_price2 {
+	margin-left:510px;
+}
+.de_price3 {
+	margin-left:450px;
+}
+.de_price4 {
+	margin-left:620px;
+}
+
+
+h1{
+	margin-left: 150px;
+}
+
+h2{
+	margin-bottom: 2px;
+	padding: 3px 0 2px 25px;
+	background: rgba(80, 208, 255, .71);
+}
+p{
+	margin-top: 0;
+	padding-top: 0;
+}
